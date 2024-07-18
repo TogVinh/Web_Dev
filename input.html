@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <h3>dang text</h3>
+    <form action="action_page" method="POST">
+        <label for="txt-username">input</label>
+        <input id="txt-username" type="text" name="Username">
+        <button type="submit">login</button>
+    </form>
+
+    <h3>dang password</h3>
+    <form action="action_page" method="POST">
+        <label for="txt_password">input</label>
+        <input id="txt_password" name="Password" type="password">
+        <button type="submit">login</button>
+    </form>
+
+    <h3>dang email</h3>
+    <form action="action_page" method="POST">
+        <label for="txt_email">input</label>
+        <input id="txt_email" name="email" type="email">
+        <button type="submit">login</button>
+    </form>
+
+    <h3>dang number</h3>
+    <form action="action_page" method="POST">
+        <label for="txt_number">input</label>
+        <input id="txt_number" name="num" type="number">
+        <button type="submit">login</button>
+    </form>
+
+    <h3>dang number voi attribute</h3>
+    <form action="action_page" method="POST">
+        <label for="txt_number_2">input</label>
+        <input id="txt_number_2" name="num2" type="number" min="0" max="100" step="10">
+        <button type="submit">login</button>
+    </form>
+
+    <h3>dang number checkbox</h3>
+    <form action="action_page" method="POST">
+        <input id="txt_checkBox" name="checkBox" type="checkbox">
+        <label for="txt_checkBox">input</label>
+        <button type="submit">login</button>
+    </form>
+
+    <h3>dang radio button</h3>
+    <form action="action_page" method="POST">
+        <input id="radioButton_1" name="radioButton" type="radio">
+        <label for="radioButton_1">radio_1</label>
+        <input id="radioButton_2" name="radioButton" type="radio">
+        <label for="radioButton_2">radio_2</label>
+        <input id="radioButton_3" name="radioButton" type="radio">
+        <label for="radioButton_3">radio_3</label>
+        <button type="submit">login</button>
+    </form>
+
+    <h3>dang require</h3>
+    <form action="action_page" method="POST">
+        <label for="txt-username">input</label>
+        <input id="txt-username" type="text" name="Username" required>
+        <button type="submit">login</button>
+    </form>
+
+    <!-- input dang selec option -->
+    <h3>input ur selection</h3>
+    <form action="action_page" method="POST">
+        <label for="txt_car">select</label>
+        <select name="car" id="txt_car">
+            <option value="car 1">car 1</option>
+            <option selected value="car 2">car 2</option>
+            <option value="car 3">car 3</option>
+        </select>
+        
+        <button type="submit">send</button>
+    </form>
+
+    <h3>show multi selection</h3>
+    <form action="action_page" method="POST">
+        <label for="txt_car" >select</label>
+        <select name="car" id="txt_car" size="2" multiple>
+            <option value="car 1">car 1</option>
+            <option selected value="car 2">car 2</option>
+            <option value="car 3">car 3</option>
+        </select>
+        
+        <button type="submit">send</button>
+    </form>
+
+
+    <!-- input dang text area -->
+    <h3>text area</h3>
+    <form action="action_page" method="POST">
+        <label for="textArea" >text area</label>
+        <textarea name="Content" id="textArea" cols="30" rows="20"></textarea>
+        <button type="submit">send</button>
+    </form>
+
+    <!-- input dang Time -->
+    <form action="action_page" method="POST">
+        <label for="txt_date" >chose date</label>
+        <input type="date" id="txt_date" name="Date">
+        <button type="submit">send</button>
+    </form>
+
+    <!-- input dang File -->
+    <form action="action_page" method="POST">
+        <label for="txt_file" >chose date</label>
+        <input type="file" id="txt_file" name="file" multiple>
+        <button type="submit">send</button>
+    </form>
+</body>
+</html>
