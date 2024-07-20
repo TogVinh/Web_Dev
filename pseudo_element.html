@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumPseudo elemntent</title>
+
+    <style>
+        .para::before {
+            content: "+ ";
+            color: red;
+            font-weight: bold;
+        }
+
+        .para::after {
+            content: " *";
+            color: blue;
+            font-weight: bold;
+        }
+
+        h2::first-letter {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .param2::first-line {
+            color : green
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>this is content of paragrap</h2>
+    <p class = "para">this is p tag 1</p>
+    <p class = "para">this is p tag 2</p>
+    <p class = "para">this is p tag 1</p>
+    <p class = "para">this is p tag 2</p>
+    <p class = "para">this is p tag 1</p>
+    <p class = "para">this is p tag 2</p>
+
+    <p class="param2"> kaj sdhaks jdha ksjd aksj dhak sjdha skjd hask dj haks jdh <br> aksj dhakjdhaskj dhakjdhaksj dhakjd  hakd jha <br> kdhakdjaskakjdha ks jdakjdha ks jdhak jakd akdhaksdhahdad sdhakdhaskjdhhadk ajhdas khdur yqw ebnbc asgw yuasd a asdjhw uad auhduw d</p>
+</body>
+</html>

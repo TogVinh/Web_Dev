@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+
+    <style>
+        h2:hover {
+            background-color: green;
+            color: white;
+        }
+
+        a:active {
+            background-color: green;
+            color: yellowgreen ;
+        }
+
+        table, th, tr, td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+
+        th {
+            width: 100px;
+            height: 30px;
+        }
+        td {
+            text-align: center;
+        }
+
+        /* tbody>tr:first-child {
+            color: aqua;
+            background-color: green;
+        }
+
+        tbody>tr:last-child {
+            color: aqua;
+            background-color: gray;
+        } */
+
+        /* tbody>tr:nth-child(2)
+        {
+            background-color: yellow;
+            color: blue;
+        } */
+
+        tbody tr:nth-child(even)
+        {
+            background-color: yellow;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>tiêu đề</h2>
+
+    <a href="https://www.youtube.com/">Youtube Link</a>
+
+    <hr>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name 1</td>
+                <td>15</td>
+                <td>HN</td>
+            </tr>
+            <tr>
+                <td>Name 2</td>
+                <td>15</td>
+                <td>HN</td>
+            </tr>
+            <tr>
+                <td>Name 3</td>
+                <td>15</td>
+                <td>HN</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
