@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- ### Thẻ điền thông tin: <form> <input> <lable>
+
+- <form>:  khi summit thi sẽ gửi dữ liệu trong body của thẻ đến server/backend (Phân biệt bằng trường name trong thẻ <input>)
+- <input>: Nhập dữ liệu
+- <lable>: liên kết đến thẻ <input> (Khi nhấn vào lable thì sẽ tự động đi đến chỗ input đã liên kết) -->
+
+<html>
+    <head>
+        <title>Tieu de cua trang web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+		<h1>Dang nhap</h1>
+		
+      	<!-- attr action là url của server hoặc backend, method POST để gửi dữ liệu -->
+      	<form action="./login" method="POST">
+         	<lable for="txt-username">User name</label>
+          	<input id="txt-username" placeholder="Enter Username" name="Username" type="text">
+            <br>
+         	<lable for="txt-pasword">Password</label>
+          	<input id="txt-password" placeholder="Enter Password" name="Password" type="password">
+          	<br>
+             
+            <!-- Type summit để gửi dữ liệu -->
+            <button type="summit">Log In</button>
+            <button type="reset">Refresh</button>
+
+            <br>
+            <a href="../index.html">BACK</a>
+        </form>
+      
+    </body>
+</html>
