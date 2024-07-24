@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <div id="content">
+        <div>
+            <h3>Name : </h3>
+            <p>ID    : </p>
+            <p>Price : </p>
+        </div>
+    </div>
+
+    <script>
+        var product = [
+            { id: 1, ProductName: 'Asic', Price: 1000 },
+            { id: 2, ProductName: 'Adidas', Price: 2000 },
+            { id: 3, ProductName: 'New Balance', Price: 1000 },
+            { id: 4, ProductName: 'Nike', Price: 3000 },
+            { id: 5, ProductName: 'Gucci', Price: 5000 },
+            { id: 6, ProductName: 'Bitis', Price: 2000 }
+        ]
+
+        var mapResult = product.map(function(item){
+            return {
+                id : item.id,
+                ProductName: item.ProductName,
+                Price: item.Price,
+                Release: 2020
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para">Content 1</p>
+    <p>Content 2</p>
+    <p class="para">Content 3</p>
+    <p>Content 4</p>
+    <p>Content 5</p>
+
+    <div id="div1">
+        <p>Inside div</p>
+    </div>
+
+    <script>
+        var pElement = document.getElementsByTagName('p');
+        // console.log(pElement);
+
+        var paraElement = document.getElementsByClassName('para');
+        // console.log(paraElement);
+
+        /* Just get one element */
+        var queryElement = document.querySelector('.para');
+        // console.log(queryElement);
+
+        var queryAllElement = document.querySelectorAll('.para');
+        // console.log(queryAllElement);
+
+        var pInDiv = document.querySelector('#div1 p');
+        
+    </script>
+</body>
+</html>
