@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event in JS</title>
+</head>
+<body>
+    <!-- button -->
+    <!-- <button onclick="getValue(this.title)" id="btn-GetTitle" title="Get information">Get Title </button> -->
+    <button id="btn-GetTitle" title="Get information">Get Title </button>
+    <hr>
+
+    <!-- input -->
+    <label for="txt-StudentName">Name : </label>
+    <!-- <input oninput="getValue(this.value)" type="text" id="txt-StudentName"> -->
+    <input type="text" id="txt-StudentName">
+    <hr>
+
+    <!-- select -->
+     <label for="txt-Class">Class</label>
+    <!-- <select onchange="getValue(this.value)" name="" id="txt-Class"> -->
+    <select name="" id="txt-Class"></select>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+
+
+    <script>
+        // function getValue(value) {
+        //     console.log(value);
+        // }
+
+        function getTitle() {
+            console.log(this.title);
+        }
+
+        function getValue() {
+            console.log(this.value);
+        }
+
+        // var button = document.querySelector('#btn-GetTitle');
+        // button.onclick = getValue1;
+
+        // var student = document.querySelector('#txt-StudentName');
+
+        /* Event Listener */
+        var button = document.querySelector('#btn-GetTitle');
+        document.addEventListener('click', getTitle);
+
+        var student = document.querySelector('#txt-StudentName');
+        document.addEventListener('input', getValue);
+
+        var classes = document.querySelector('#txt-Class');
+        document.addEventListener('change', getValue);
+    </script>
+</body>
+</html>
