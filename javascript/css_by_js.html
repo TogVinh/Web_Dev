@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "div-1"></div>
+    <script>
+        var element = document.querySelector('#div-1');
+        var style = element.style;
+
+        console.log(style);
+
+        style.width = '200px';
+
+
+        Object.assign(style, {
+            width: '200px',
+            height: '200px',
+            backgroundColor : 'yellow'
+        })
+    </script>
+</body>
+</html>
