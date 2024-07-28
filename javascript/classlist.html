@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>classlist</title>
+
+    <style>
+        .cover {
+            height: 300px;
+            width: 300px;
+            border: 2px solid red;
+        }
+        .para {
+            background-color: greenyellow;
+        }
+    </style>
 </head>
 <body>
-    <button id="btn">Action</button>
+    <button id="btn" onclick="WorkWidthClassList()">Action</button>
     <br>
     <br>
     <div class="cover" id="div-1"></div>
     <script>
-        button
+        // function WorkWidthClassList() {
+        //     var div = document.querySelector('#div-1');
+        //     console.log(div.classList);
+        //     div.classList.add('para');
+        //    //div.classList.remove('cover');
+        // }
+
+        function WorkWidthClassList() {
+            var div = document.querySelector('#div-1');
+            console.log(div.classList);
+            // check if para is containered => remove
+            // if don't have para in classlist => add para
+            div.classList.toggle('para');
+           
+            
+            // if you want to check any class has exxisted in classlist or not
+            console.log(div.classList.contains('cover-something'));
+        }
     </script>
 </body>
 </html>
