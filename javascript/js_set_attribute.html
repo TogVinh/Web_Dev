@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js to set attribute</title>
+</head>
+<body>
+    <div id="div-1"></div>
+    <script>
+        var element = document.querySelector('#div-1');
+        var styles = element.style;
+
+        console.log("style | ", styles);
+
+        // styles.width = "200px";
+        // styles.backgroundColor = 'yellow';
+
+        Object.assign (styles, {
+            width: '200px',
+            backgroundColer: 'green'
+        })
+    </script>
+</body>
+</html>
