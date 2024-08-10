@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h2>Sync</h2>
+    <p>
+        <ul>
+            <li>đồng bộ</li>
+        </ul>
+    </p>
+
+    <h2>Async</h2>
+    <p>
+        Sync
+    </p>
+    <script>
+        // setTimeout(function() {
+        //     console.log(1);
+        // }, 1000)
+
+        // console.log(2);
+
+        var promise = new Promise (
+        //excutor    
+        function(resolve, reject) {
+            // logic
+            // susscess => resolve()
+            //Fail => reject()
+            // /resolve();
+            reject();
+        }
+        );
+
+        promise
+            .then(function(){
+                console.log("Success");
+            })
+            .catch(function(){
+                console.log("Failure");
+            })
+            .finally(function() {
+                console.log("Finally");
+            })
+
+    </script>
+    
+</body>
+</html>
