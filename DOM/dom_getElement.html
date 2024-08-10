@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Get element Method</title>
+</head>
+<body>
+    <p>Can get by
+        <ul>
+            <li>ID</li>
+            <li>Class</li>
+            <li>Tag</li>
+            <li>CSS selector</li>
+            <li>html collection</li>
+        </ul>
+    </p>
+
+    <h1 id="heading" class="className">HTML DOM</h1>
+    <h1 class="className">HTML DOM</h1>
+    <h1 class="className">HTML DOM</h1>
+
+    <div class="box">
+        <h2 class="head2">head 2</h2>
+        <h2 class="head2">head 2</h2>
+        <h2 class="head2">head 2</h2>
+        <h2 class="head2">head 2</h2>
+    </div>
+
+    <script>
+        var headingNode = document.getElementById('heading');
+        console.log(headingNode);
+
+        var headingClass = document.getElementsByClassName('className');
+        console.log(headingClass);
+
+        var tagName = document.getElementsByTagName('h1');
+        console.log(tagName);
+
+        var headNode = document.querySelector('.box .head2');
+        console.log(headNode);
+
+        var headNodeAll = document.querySelectorAll('.box .head2');
+        console.log(headNodeAll);
+    </script>
+</body>
+</html>

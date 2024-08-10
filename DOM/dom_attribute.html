@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Attribute Node</title>
+</head>
+<body>
+    <h1 class="className-h1">HTML DOM Attribute</h1>
+
+    <h1 class="heading">Heading text</h1>
+
+    <script>
+        var headingElement = document.querySelector('h1');
+        headingElement.title = 'addTitle';
+        headingElement.setAttribute('attribute_name', 'value_attribute');
+        headingElement.getAttribute('class');
+
+        var headingText = document.querySelector('.heading');
+        console.log(headingText.innerText);
+        console.log(headingText.textContent);
+
+        headingText.textContent = 'New heading Text';
+
+        /* Inner Text
+        * just show what the user see
+        */
+
+        /*textContent
+        * show everything ihe textNode
+        */
+    </script>
+</body>
+</html>
