@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class _ Enhanced</title>
+</head>
+<body>
+    <script>
+        // var name = 'Javsscirpt';
+        // var price = 1000;
+
+        // var course = {
+        //     name,
+        //     price,
+
+        //     getName() {
+        //         return name;
+        //     }
+        // };
+
+        class Car {
+            constructor(brand, color, type) {
+                this.brand = brand;
+                this.color = color;
+                this.type = type;
+            }
+
+            getInfo = ()=> {
+                return `Brand: ${this.brand} , color: ${this.color} , type: ${this.type}}`;
+            }
+        }
+
+        class SuperCar extends Cars {
+            constructor(brand, color, type, speed) {
+                super(brand, color, type);
+                this.speed = speed;
+            }
+
+            getInfoSuper() {
+                return this.getInfo + this.speed;
+            }
+        }
+
+        let lanbo = new SuperCar('lambo', "yellow", "coupe", "high")
+    </script>
+    
+</body>
+</html>

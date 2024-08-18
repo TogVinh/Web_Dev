@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        var array = ['Javascript', 'PHP', 'Ruby'];
+
+        var [a, b, c] = array;
+
+        var [a, ...rest] = array;
+
+        console.log(a);
+        console.log(rest);
+
+
+        // using with object must using by key
+        var course = {
+            name: 'Javascript',
+            price: 1000,
+            image: 'image-address'
+        }
+
+        var {name, price, image} = course
+        console.log(name);
+
+        // Rest operator
+        function logger(...params) {
+            console.log(params);
+        }
+        console.log(logger(1,2,3,4,5,6,7,8,9));
+
+        
+    </script>
+    
+</body>
+</html>
